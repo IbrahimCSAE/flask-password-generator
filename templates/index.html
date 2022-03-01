@@ -8,7 +8,7 @@
 <h1>Password Generator</h1>
 <body>
     <form  action = "/result" method = "POST">
-    <label for="length" >Select password Length:</label>
+    <p><label for="length" >Select Password Length:</label>
 
     
       <select name="length" id="length">
@@ -19,7 +19,7 @@
     <option value="5">5</option>
     <option value="6">6</option>
     <option value="7">7</option>
-    <option value="8">8</option>
+    <option value="8" selected="selected">8</option>
     <option value="9">9</option>
     <option value="10">10</option>
     <option value="11">11</option>
@@ -28,22 +28,21 @@
     <option value="14">14</option>
     <option value="15">15</option>
     <option value="16">16</option>
-    </select>
-    <div>
-    <input type="checkbox"  name="mycheckbox" value="1">
-    <label for="checkbox"> Include Symbols</label><br>
-    <input type="checkbox"  name="mycheckbox" value="2">
-    <label for="checkbox"> Include Numbers</label><br>
-    <input type="checkbox"  name="mycheckbox" value="3">
-    <label for="checkbox Characters"> Include Lowercase Characters</label><br>
-    <input type="checkbox"  name="mycheckbox" value="4">
-    <label for="checkbox"> Include Uppercase Characters</label><br>
+    </select></p>
+    
+    <p><input type="checkbox"  name="mycheckbox" value="1">
+    <label for="checkbox"> Include Symbols</label><br></p>
+    <p><input type="checkbox"  name="mycheckbox" value="2">
+    <label for="checkbox"> Include Numbers</label><br></p>
+    <p><input type="checkbox"  name="mycheckbox" value="3">
+    <label for="checkbox Characters"> Include Lowercase Characters</label><br></p>
+    <p><input type="checkbox"  name="mycheckbox" value="4">
+    <label for="checkbox"> Include Uppercase Characters</label><br></p>
 
-    <input type="Submit">Generate Password
-    <div class="chboxl">Your New Password:</div>
-    <div class="chboxr"></div>
+    <div><p><input type="Submit" value="Generate Password"></div></p>
+    
     {% if password %}
-    <input name="final_pass" id="final_pass" type="text" size="75" value = {{password}} class="txt_password"  ;="">
+  <div><p><input name="final_pass" id="final_pass" type="text" size="30" value = {{password}} class="txt_password"  ;=""></p>
     {% endif %}
   
   
