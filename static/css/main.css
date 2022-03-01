@@ -44,3 +44,8 @@ input[type="submit" i] {
     right:30px
     
 }
+
+input[type="text" i] {
+    position: absolute;
+    right:25px;
+}
