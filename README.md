@@ -1,5 +1,4 @@
-# flask-password-generator
-
+# Flask Password Generator
 This is a password generator designed using Flask
 
 #Requirements
